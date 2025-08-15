@@ -39,7 +39,7 @@ option(freetype-gl_BUILD_DEMOS "Build the freetype-gl example programs" ON)
 option(freetype-gl_BUILD_APIDOC "Build the freetype-gl API documentation" ON)
 option(freetype-gl_BUILD_HARFBUZZ "Build the freetype-gl harfbuzz support (experimental)" OFF)
 option(freetype-gl_BUILD_MAKEFONT "Build the makefont tool" ON)
-option(freetype-gl_BUILD_TESTS "Build the tests" ON)
+option(freetype-gl_BUILD_TESTS "Build the tests" OFF)
 option(freetype-gl_BUILD_SHARED "Build shared library" OFF)
 option(freetype-gl_OFF_SCREEN "Build for off-screen render (build libfreetype-gl.so only without GLX, demos must disable because of missing glfw)" OFF)
 

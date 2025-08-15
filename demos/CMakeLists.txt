@@ -39,7 +39,7 @@ endif()
 # Find dependencies
 find_package(glfw3 3.2 REQUIRED)
 find_package(AntTweakBar)
-find_package(Fontconfig)
+# find_package(Fontconfig)
 
 add_library(demo-utils OBJECT
     mat4.h
@@ -92,11 +92,11 @@ create_demo(distance-field distance-field.c)
 create_demo(distance-field-2 distance-field-2.c)
 create_demo(distance-field-3 distance-field-3.c)
 
-if(FONTCONFIG_FOUND)
-    include_directories(${FONTCONFIG_INCLUDE_DIR})
-    create_demo(markup markup.c)
-    target_link_libraries(markup ${Fontconfig_LIBRARY})
-endif()
+# if(FONTCONFIG_FOUND)
+#     include_directories(${FONTCONFIG_INCLUDE_DIR})
+#     create_demo(markup markup.c)
+#     target_link_libraries(markup ${Fontconfig_LIBRARY})
+# endif()
 
 if(ANT_TWEAK_BAR_FOUND)
     include_directories(${ANT_TWEAK_BAR_INCLUDE_PATH})
